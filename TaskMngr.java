@@ -19,7 +19,9 @@ public class Main
         Tasks.add("First");
         
     }
-    public void addTasks(){
+    public void addTasks(String noweZadanie){
+        
+        Tasks.add(noweZadanie);
         
         
     }
@@ -54,6 +56,15 @@ public class Main
 		        
 		        case 1:
 		            
+		            System.out.println("Wpisz zadanie");
+		            
+		            String noweZadanie=scanner.nextLine();
+		            
+		            newObj.addTasks(noweZadanie);
+		            
+		            
+		            
+		            
 		            
 		    }
 		    
@@ -61,26 +72,10 @@ public class Main
 		    
 		}
 		
-// 		Neu neuObj=new Neu(name);
+		
+		
+
 		
 		
 	}
 }
-// class Neu{
-    
-    
-//     private String name;
-    
-    
-//     public Neu(String name){
-//         this.name=name;
-//     }
-    
-    
-//     public String getname(){
-//         return name;
-//     }
-    
-    
-    
-    
